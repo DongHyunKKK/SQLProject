@@ -6,7 +6,6 @@ select now();
 
 use sqlclass_db;
 
-
 # 1.
 # world 테이블 생성
 create table world
@@ -58,4 +57,5 @@ order by area desc;
 # 2 - (5)
 select country, top_level_domain from world
 order by top_level_domain;
+
 

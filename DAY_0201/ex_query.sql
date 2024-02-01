@@ -154,4 +154,3 @@ from customer as c inner join rental as r
 	on c.customer_id = r.customer_id
 where date(r.rental_date) = '2005-06-14'
 order by return_date desc;
-
