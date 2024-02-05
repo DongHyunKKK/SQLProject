@@ -35,6 +35,11 @@ from
 	where first_name = 'JESSIE'
 	) as cust;
 
+# 위 결과와 동일
+select concat(last_name, '. ', first_name) full_name, email
+from customer
+where first_name = 'JESSIE';
+
 # 임시 테이블 만들기
 create temporary table actors_j
    (actor_id smallint(5),
@@ -154,3 +159,4 @@ from customer as c inner join rental as r
 	on c.customer_id = r.customer_id
 where date(r.rental_date) = '2005-06-14'
 order by return_date desc;
+
